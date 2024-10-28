@@ -1,0 +1,192 @@
+/* ### Capstone Project: "Interactive Quiz Web App"
+
+#### Overview
+Students will create an interactive quiz web application that allows users to answer questions on a specific topic of their choice (e.g., science, history, pop culture). This project will integrate HTML, CSS, JavaScript, and jQuery, providing a fun way to learn frontend development.
+
+#### Objectives
+- Build a functional web application using HTML, CSS, and JavaScript.
+- Utilize jQuery to enhance user experience with interactivity.
+- Implement basic data management with JavaScript.
+- Develop skills in designing user-friendly interfaces.
+
+#### Project Components
+
+1. **Homepage**
+   - **Header**: Title of the quiz app and a start button.
+   - **Instructions Section**: Brief description of how to play the quiz.
+   - **Footer**: Author information and links to resources.
+
+2. **Quiz Page**
+   - **Question Display**: A section to show the current question.
+   - **Answer Options**: Multiple-choice buttons for answers.
+   - **Score Tracker**: Display current score and number of questions answered.
+   - **Next Question Button**: A button to proceed to the next question.
+   - **End Screen**: Display total score and options to restart the quiz or go back to the homepage.
+
+3. **Question Data Management**
+   - Use an array of objects to store questions, options, and correct answers.
+   - Implement a function to randomly select questions from the array for each quiz session.
+
+4. **Styling and User Experience**
+   - Use CSS to create an engaging layout (colors, fonts, button styles).
+   - Ensure the app is responsive to work well on mobile and desktop devices.
+
+5. **Interactive Features**
+   - Use jQuery for:
+     - Showing/hiding elements (e.g., questions and scores).
+     - Animations when transitioning between questions.
+     - Validating and giving feedback on answers (correct or incorrect).
+
+6. **Accessibility Considerations**
+   - Use proper HTML elements for accessibility (e.g., buttons, labels).
+   - Provide feedback in a way that is easy to understand for all users.
+
+#### Technology Stack
+- **HTML**: Structure of the quiz app.
+- **CSS**: Styling and responsive design.
+- **JavaScript & jQuery**: Logic for quiz functionality and interactivity.
+
+#### Resources
+- **HTML/CSS Tutorials**: W3Schools, MDN Web Docs.
+- **JavaScript/jQuery Tutorials**: Codecademy, jQuery official documentation.
+- **Quiz Design Tips**: Examples from online quizzes for inspiration.
+
+#### Timeline
+- **Week 1**: Introduction to HTML & CSS; start building the homepage and quiz structure.
+- **Week 2**: Develop the Quiz page, focusing on question display and answer options.
+- **Week 3**: Implement quiz logic using JavaScript and jQuery for interactions.
+- **Week 4**: Style the application and ensure responsive design.
+- **Week 5**: Test functionality and get peer feedback; make necessary adjustments.
+- **Week 6**: Present the quiz apps to the class and share experiences.
+
+#### Presentation
+At the end of the project, students will present their quiz apps, discussing their design process and the technologies used. They can also share their thoughts on the challenges faced and how they overcame them, fostering a collaborative learning environment.
+
+### Conclusion
+This interactive quiz web app project provides middle school students with a practical application of web development skills while allowing them to engage with topics they are passionate about. Through this hands-on experience, they will enhance their coding abilities and creativity. */
+.placeholder {
+   height: 86px;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   background-color: white;
+   width: 100vw;
+   border-bottom: 4px solid black;
+}
+nav div {
+   display: flex;
+   align-items: center;
+ } 
+nav a {
+   vertical-align: middle;
+   padding: 0px 50px;
+   text-decoration: none;
+   cursor: pointer;
+   font-size: 1.5rem;
+   color: black;
+}
+.logo {
+   width: 200px;
+   margin: 15px 20px;
+}
+.seleced {
+   font-weight: bold;
+}
+
+header > div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-bottom: 4px solid black;
+}
+header > #img {
+   background-image: url("./images/quizBackground.jpg");
+   background-size: cover;
+   height: 500px;
+   color: white;
+}
+header h1 {
+   font-size: 100pt;
+}
+header h2 {
+   font-size: 48pt;
+}
+header h4 {
+   margin-top: 2rem;
+   font-size: 24pt;
+}
+header h3 {
+   font-size: 30pt;
+   margin-top: 1.5rem;
+   margin-bottom: 2rem;
+}
+
+main > div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+main > div > div {
+   margin: 25px;
+}
+main > h3 {
+   font-size: 28pt;
+   margin: 2rem 2rem 1rem 2rem;
+}
+main > div > div > h4 {
+   font-size: 24pt;
+   margin-left: 25px;
+}
+main > div > div > p {
+   margin: 25px;
+   font-size: 18pt;
+   border: 1px
+}
+main > div > div > p > a {
+   cursor: pointer;
+   color: black;
+}
+
+.quote {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-top: 4px solid black;
+   border-bottom: 4px solid black;
+}
+.quote > h4 {
+   margin-top: 2rem;
+   font-size: 24pt;
+}
+.quote > h3 {
+   font-size: 30pt;
+   margin-top: 1.5rem;
+   margin-bottom: 2rem;
+}
+
+footer {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+footer > div {
+   margin: 15px;
+}
+footer img {
+   height: 34px;
+   vertical-align: middle;
+   margin-left: 10px;
+}
+footer > div > p {
+   font-size: 24px;
+}
+footer > div > p > a {
+   font-size: 20px;
+   text-decoration: none;
+   color: black;
+}
